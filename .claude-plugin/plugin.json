@@ -1,0 +1,13 @@
+{
+  "name": "big-project-constructor",
+  "version": "1.0.0",
+  "description": "Project memory for non-technical builders. Use when someone is starting a big project (a business, book, podcast, renovation, job search, app), wants to pick up where a previous conversation left off, keeps losing track of what was decided, or says 'wrap it up' or 'end session'. Sets up a project folder, a per-topic running log and current-state summary, and an end-of-session ritual that saves everything for next time.",
+  "author": {
+    "name": "Jay Deverett",
+    "url": "https://github.com/jaydeverett"
+  },
+  "homepage": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+  "repository": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+  "license": "MIT",
+  "keywords": ["project", "memory", "continuity", "planning", "non-technical", "sessions", "workflow"]
+}

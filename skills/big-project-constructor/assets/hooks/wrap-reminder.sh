@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# cairn — wrap reminder hook
+# Big Project Constructor — wrap reminder hook
 #
 # WHAT THIS DOES
 #   Nudges Claude to offer a wrap-up at the two moments a session is most
@@ -19,17 +19,17 @@
 #   in here fails, it exits cleanly and Claude carries on unaffected.
 #
 # NOT ACTIVE BY DEFAULT
-#   Nothing runs this unless you opt in. The cairn setup flow offers to
+#   Nothing runs this unless you opt in. The Big Project Constructor setup flow offers to
 #   install it, which writes .claude/settings.local.json — a file that is
 #   gitignored and stays on your machine. It is never committed, so cloning
-#   cairn never executes anything.
+#   installing Big Project Constructor never executes anything.
 #
 # TUNING
-#   CAIRN_WRAP_AFTER_TURNS  turns before the first nudge (default 25)
+#   BPC_WRAP_AFTER_TURNS  turns before the first nudge (default 25)
 #
 set -uo pipefail
 
-THRESHOLD="${CAIRN_WRAP_AFTER_TURNS:-25}"
+THRESHOLD="${BPC_WRAP_AFTER_TURNS:-25}"
 
 payload="$(cat 2>/dev/null || true)"
 [ -n "$payload" ] || exit 0
@@ -59,14 +59,14 @@ state_dir="${TMPDIR:-/tmp}"
 case "$event" in
   SessionStart)
     [ "$source_kind" = "compact" ] || exit 0
-    marker="${state_dir}/cairn-wrap-compact-${session}"
+    marker="${state_dir}/bpc-wrap-compact-${session}"
     [ -e "$marker" ] && exit 0
     : > "$marker" 2>/dev/null || true
-    emit "This conversation has just been compacted, which means the session context is full. Per the cairn workflow, tell the user plainly that context is now tight and recommend wrapping up soon: a session that runs much further past this point can reach a state where the wrap-up itself no longer fits, at which point the session cannot be closed cleanly at all and recovering it costs a whole extra session. Do not wrap unilaterally. Offer, give a one-line reason, and let the user decide."
+    emit "This conversation has just been compacted, which means the session context is full. Per the Big Project Constructor workflow, tell the user plainly that context is now tight and recommend wrapping up soon: a session that runs much further past this point can reach a state where the wrap-up itself no longer fits, at which point the session cannot be closed cleanly at all and recovering it costs a whole extra session. Do not wrap unilaterally. Offer, give a one-line reason, and let the user decide."
     ;;
 
   Stop)
-    counter="${state_dir}/cairn-wrap-turns-${session}"
+    counter="${state_dir}/bpc-wrap-turns-${session}"
     count=0
     [ -f "$counter" ] && count="$(cat "$counter" 2>/dev/null || printf 0)"
     case "$count" in (*[!0-9]*|"") count=0 ;; esac
@@ -76,7 +76,7 @@ case "$event" in
     # Fire exactly on the threshold turn so the nudge lands once, not every
     # turn afterwards.
     [ "$count" -eq "$THRESHOLD" ] || exit 0
-    emit "This cairn session has now run ${THRESHOLD} turns without wrapping. At a natural pause in the current work, remind the user that nothing from this session is saved until they say 'wrap it up', and offer to wrap now. Keep it to one or two sentences and do not derail whatever is in progress. Do not wrap unilaterally, and do not raise this again unless the user asks."
+    emit "This session has now run ${THRESHOLD} turns without wrapping. At a natural pause in the current work, remind the user that nothing from this session is saved until they say 'wrap it up', and offer to wrap now. Keep it to one or two sentences and do not derail whatever is in progress. Do not wrap unilaterally, and do not raise this again unless the user asks."
     ;;
 esac
 

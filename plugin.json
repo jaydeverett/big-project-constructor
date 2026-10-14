@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "big-project-constructor",
+  "version": "1.0.0",
+  "description": "Project memory for non-technical builders. Sets up a weeks-long project with an AI assistant so every conversation picks up exactly where the last one left off: a folder of plain files, a five-minute setup, and a short end-of-session ritual that saves everything.",
+  "author": {
+    "name": "Jay Deverett",
+    "url": "https://github.com/jaydeverett"
+  },
+  "homepage": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+  "repository": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+  "license": "MIT",
+  "keywords": ["project", "memory", "continuity", "planning", "non-technical", "sessions", "workflow"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/big-project-constructor/SKILL.md",
+      "interface": {
+        "displayName": "Big Project Constructor",
+        "shortDescription": "Keeps a weeks-long project coherent across every conversation. No coding required.",
+        "longDescription": "Starting something big with an AI assistant goes well for a day and then falls apart: every new conversation starts from scratch, decisions scatter across old chats, and by week three nobody can say what the current state is. Big Project Constructor fixes that. A five-minute setup turns your idea into a project folder with a topic structure, an instruction file the assistant reads every session, and a running log plus a current-state summary for each topic. You work one question at a time; the assistant flags decisions as they happen; and when you say 'wrap it up' it saves everything and hands you the prompt for next time. Works for a business, a book, a podcast, a renovation, a job search, or an app. Built from the process notes of a year of real projects.",
+        "developerName": "Jay Deverett",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+        "defaultPrompt": [
+          "I'm starting a big project and want help keeping it organized over the next few weeks",
+          "Set up a project for my podcast idea",
+          "Wrap it up"
+        ]
+      }
+    }
+  }
+}

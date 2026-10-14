@@ -27,7 +27,11 @@ Everything lives in a folder on your computer. Nothing is uploaded anywhere, wit
 
 ## Reading more
 
-You do not need to come back here. Claude explains how the project works as you go, and the [docs](docs/) folder answers the common questions if you ever want them.
+You do not need to come back here. Claude explains how the project works as you go, and the [references](skills/big-project-constructor/references/) folder answers the common questions if you ever want them.
+
+## For people who already use Claude Code or Codex
+
+This repository is also a plugin. Install it from the Claude Code plugin marketplace or the ChatGPT and Codex plugin directory, open any folder, and ask to set up a project. The skill is at [skills/big-project-constructor/SKILL.md](skills/big-project-constructor/SKILL.md).
 
 ## Contributing
 

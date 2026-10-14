@@ -1,6 +1,6 @@
 # The Workflow
 
-This document explains the session ritual that makes cairn work. The whole template is designed around it — if you skip the ritual, the rest of the structure produces nothing.
+This document explains the session ritual that makes Big Project Constructor work. The whole template is designed around it — if you skip the ritual, the rest of the structure produces nothing.
 
 ## The three moments
 
@@ -79,11 +79,11 @@ If the project is under version control, the wrap ends by **pushing**, not just 
 
 Everything above depends on a habit: you typing "wrap it up" before you close the window. That habit is the entire workflow, and it is also the single easiest thing to forget. Documentation can teach a habit but it cannot install one.
 
-Cairn ships a small script, `.cairn/hooks/wrap-reminder.sh`, that nudges Claude to offer a wrap-up at the two moments a session is most likely to be lost — when the conversation compacts, and once a session has run past a turn threshold. It talks to Claude rather than to you; Claude decides how to raise it and you decide whether to wrap. It never blocks anything and never wraps on its own.
+Big Project Constructor ships a small script, `.bpc/hooks/wrap-reminder.sh`, that nudges Claude to offer a wrap-up at the two moments a session is most likely to be lost — when the conversation compacts, and once a session has run past a turn threshold. It talks to Claude rather than to you; Claude decides how to raise it and you decide whether to wrap. It never blocks anything and never wraps on its own.
 
-**It is off unless you turn it on.** The setup flow offers to install it, which writes `.claude/settings.local.json` — gitignored, so it stays on your machine. You can also ask Claude to add or remove it at any point, or change the threshold with `CAIRN_WRAP_AFTER_TURNS` (default 25).
+**It is off unless you turn it on.** The setup flow offers to install it, which writes `.claude/settings.local.json` — gitignored, so it stays on your machine. You can also ask Claude to add or remove it at any point, or change the threshold with `BPC_WRAP_AFTER_TURNS` (default 25).
 
-The reason it isn't pre-wired deserves saying plainly, because it applies well beyond cairn. Hooks are shell commands Claude Code runs automatically. A repository that ships hooks already switched on executes code on everyone who clones it, before they have looked at anything — which is why a committed `.claude/settings.json` full of hooks should be read with the same suspicion you'd give a strange install script. Cairn ships the script inert and asks first. If you ever clone a template that doesn't, read its hooks before you run it.
+The reason it isn't pre-wired deserves saying plainly, because it applies well beyond this project. Hooks are shell commands Claude Code runs automatically. A repository that ships hooks already switched on executes code on everyone who clones it, before they have looked at anything — which is why a committed `.claude/settings.json` full of hooks should be read with the same suspicion you'd give a strange install script. Big Project Constructor ships the script inert and asks first. If you ever clone a template that doesn't, read its hooks before you run it.
 
 ## Why this works
 
@@ -123,7 +123,7 @@ A few failure modes worth knowing:
 
 ## Working with more capable models
 
-Cairn was first built around models that needed to be pushed to do enough. The models since then need something different. They will happily do more than you asked, apply an edit you wanted to review, re-open a question you closed, and state a checkable claim with confidence. None of this is malice and most of it is useful. It just means the discipline that matters has shifted from *making Claude do the work* to *keeping Claude inside the lines while it does*. The rules that emerged from running several projects on the newer models are in the template `CLAUDE.md`, and they are the ones this document keeps pointing at:
+Big Project Constructor was first built around models that needed to be pushed to do enough. The models since then need something different. They will happily do more than you asked, apply an edit you wanted to review, re-open a question you closed, and state a checkable claim with confidence. None of this is malice and most of it is useful. It just means the discipline that matters has shifted from *making Claude do the work* to *keeping Claude inside the lines while it does*. The rules that emerged from running several projects on the newer models are in the template `CLAUDE.md`, and they are the ones this document keeps pointing at:
 
 - **Ground before proposing.** Read the actual work before designing on top of it.
 - **Flag once, then respect the decision.**

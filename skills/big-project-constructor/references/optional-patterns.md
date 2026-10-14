@@ -1,12 +1,12 @@
 # Optional Patterns
 
-Patterns that work well for some projects but are not part of the minimal cairn template. Add them when the project actually needs them, not by default.
+Patterns that work well for some projects but are not part of the minimal template. Add them when the project actually needs them, not by default.
 
 ## Decision and question numbering
 
 Some projects accumulate enough decisions that referencing them by name gets clumsy. ("Remember the decision about format from session 3?" — which one?) Numbering each decision and each open question creates a stable, short reference.
 
-**Convention:** Decisions get a per-topic prefix and a number (`F1`, `F2` for "Foundation"; `P1`, `P2` for "Production"). Open questions get `OQ` after the prefix: `F-OQ1`, `P-OQ1`. The worked example at `.cairn/example/` uses this pattern.
+**Convention:** Decisions get a per-topic prefix and a number (`F1`, `F2` for "Foundation"; `P1`, `P2` for "Production"). Open questions get `OQ` after the prefix: `F-OQ1`, `P-OQ1`. The worked example at `.bpc/example/` uses this pattern.
 
 When to adopt:
 - You're past ~10 decisions and still referencing them across sessions
@@ -237,7 +237,7 @@ When to adopt:
 
 ## Standing rules inherited from a previous project
 
-If this is not your first cairn project, the previous one taught you things. Some of them are in its `Process_Meta_Notes.md`; the ones that repeated are probably already in its `CLAUDE.md`.
+If this is not your first Big Project Constructor project, the previous one taught you things. Some of them are in its `Process_Meta_Notes.md`; the ones that repeated are probably already in its `CLAUDE.md`.
 
 **Pattern:** open the new project's `Process_Meta_Notes.md` with a "Standing Rules" section, ported from the previous project, before any dated entries. Each rule is one line plus the incident that taught it. Reference it from `CLAUDE.md` ("read the standing rules before any significant multi-session work"). New sessions add dated entries below; they do not relitigate the standing rules.
 

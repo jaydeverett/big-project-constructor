@@ -5,7 +5,7 @@ Concrete prompts you can paste at the start of a Claude Code session. Adapt the 
 ## The first session of a brand-new project
 
 ```
-This is the first session for [project name]. I just finished cairn setup. Let's begin work on [starting topic — the one you picked during setup]. Read CLAUDE.md and [starting topic folder]/Brainstorm.md, then ask me the first foundational question one at a time. I'll signal when we're done with "wrap it up."
+This is the first session for [project name]. I just finished setup. Let's begin work on [starting topic — the one you picked during setup]. Read CLAUDE.md and [starting topic folder]/Brainstorm.md, then ask me the first foundational question one at a time. I'll signal when we're done with "wrap it up."
 ```
 
 (If you said yes to "start the first session now" during setup, Claude already moved into this mode — you don't need to paste this prompt for the very first session.)
@@ -73,4 +73,4 @@ Save the **next session prompt** Claude produced. Options:
 - Email it to yourself
 - Anything else that means you'll find it next time
 
-The next-session prompt is the highest-leverage artifact cairn produces. Losing it costs you the next session's clean start.
+The next-session prompt is the highest-leverage artifact Big Project Constructor produces. Losing it costs you the next session's clean start.
