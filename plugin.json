@@ -24,7 +24,7 @@
       "onboardingSkill": "./skills/big-project-constructor/SKILL.md",
       "interface": {
         "displayName": "Big Project Constructor",
-        "shortDescription": "Keeps a weeks-long project coherent across every conversation. No coding required.",
+        "shortDescription": "Memory for weeks-long projects",
         "longDescription": "Starting something big with an AI assistant goes well for a day and then falls apart: every new conversation starts from scratch, decisions scatter across old chats, and by week three nobody can say what the current state is. Big Project Constructor fixes that. A five-minute setup turns your idea into a project folder with a topic structure, an instruction file the assistant reads every session, and a running log plus a current-state summary for each topic. You work one question at a time; the assistant flags decisions as they happen; and when you say 'wrap it up' it saves everything and hands you the prompt for next time. Works for a business, a book, a podcast, a renovation, a job search, or an app. Built from the process notes of a year of real projects.",
         "developerName": "Jay Deverett",
         "category": "Productivity",
@@ -40,7 +40,14 @@
         ],
         "privacyPolicyURL": "https://github.com/jaydeverett/big-project-constructor/blob/main/PRIVACY.md",
         "termsOfServiceURL": "https://github.com/jaydeverett/big-project-constructor/blob/main/LICENSE",
-        "supportURL": "https://github.com/jaydeverett/big-project-constructor/issues"
+        "supportURL": "https://github.com/jaydeverett/big-project-constructor/issues",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.svg",
+        "brandColor": "#1F2A44",
+        "brandColorDark": "#E4A44A"
+      },
+      "publication": {
+        "release_notes": "Initial release. Five-question setup, per-topic Brainstorm and Master files, and the wrap-up ritual. Works in Claude Code, Codex, and ChatGPT Projects."
       }
     }
   }
