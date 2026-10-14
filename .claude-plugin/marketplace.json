@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "big-project-constructor",
+  "description": "Big Project Constructor: project memory for non-technical builders",
+  "owner": {
+    "name": "Jay Deverett",
+    "url": "https://github.com/jaydeverett"
+  },
+  "plugins": [
+    {
+      "name": "big-project-constructor",
+      "description": "Project memory for non-technical builders. Sets up a weeks-long project so every conversation picks up where the last one left off.",
+      "author": { "name": "Jay Deverett" },
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/jaydeverett/big-project-constructor"
+    }
+  ]
+}

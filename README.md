@@ -17,7 +17,7 @@ Open [claude.ai](https://claude.ai) and paste this:
 
 > I want to use this for a project. Can you help me set it up?
 >
-> https://github.com/jaydeverett/Claude-Code-Project-Seed
+> https://github.com/jaydeverett/big-project-constructor
 
 Claude will walk you through everything, one step at a time, and tell you when you're ready to begin. Then it asks you five questions about your project, and five minutes later you can start working.
 

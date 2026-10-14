@@ -7,8 +7,8 @@
     "name": "Jay Deverett",
     "url": "https://github.com/jaydeverett"
   },
-  "homepage": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
-  "repository": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+  "homepage": "https://github.com/jaydeverett/big-project-constructor",
+  "repository": "https://github.com/jaydeverett/big-project-constructor",
   "license": "MIT",
   "keywords": ["project", "memory", "continuity", "planning", "non-technical", "sessions", "workflow"],
   "extensions": {
@@ -21,7 +21,7 @@
         "developerName": "Jay Deverett",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
-        "websiteURL": "https://github.com/jaydeverett/Claude-Code-Project-Seed",
+        "websiteURL": "https://github.com/jaydeverett/big-project-constructor",
         "defaultPrompt": [
           "I'm starting a big project and want help keeping it organized over the next few weeks",
           "Set up a project for my podcast idea",
