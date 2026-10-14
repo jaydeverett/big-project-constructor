@@ -31,7 +31,14 @@ You do not need to come back here. Claude explains how the project works as you 
 
 ## For people who already use Claude Code or Codex
 
-This repository is also a plugin. Install it from the Claude Code plugin marketplace or the ChatGPT and Codex plugin directory, open any folder, and ask to set up a project. The skill is at [skills/big-project-constructor/SKILL.md](skills/big-project-constructor/SKILL.md).
+This repository is also a plugin. In Claude Code, run these two commands, then open any folder and ask to set up a project:
+
+```
+/plugin marketplace add jaydeverett/big-project-constructor
+/plugin install big-project-constructor@big-project-constructor
+```
+
+For ChatGPT and Codex, install it from the plugin directory once it is listed there. The skill itself is at [skills/big-project-constructor/SKILL.md](skills/big-project-constructor/SKILL.md).
 
 ## Contributing
 
