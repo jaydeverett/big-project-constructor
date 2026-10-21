@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "big-project-constructor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project memory for non-technical builders. Sets up a weeks-long project with an AI assistant so every conversation picks up exactly where the last one left off: a folder of plain files, a five-minute setup, and a short end-of-session ritual that saves everything.",
   "author": {
     "name": "Jay Deverett",
@@ -41,8 +41,8 @@
         "privacyPolicyURL": "https://github.com/jaydeverett/big-project-constructor/blob/main/PRIVACY.md",
         "termsOfServiceURL": "https://github.com/jaydeverett/big-project-constructor/blob/main/LICENSE",
         "supportURL": "https://github.com/jaydeverett/big-project-constructor/issues",
-        "composerIcon": "./assets/icon.svg",
-        "logo": "./assets/logo.svg",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
         "brandColor": "#1F2A44",
         "brandColorDark": "#E4A44A"
       },
