@@ -1,4 +1,4 @@
-# Claude Code Project Seed
+# Big Project Constructor
 
 **A project starter kit for building anything with Claude Code. No technical experience required.**
 
