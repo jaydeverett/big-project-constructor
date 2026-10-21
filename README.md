@@ -17,11 +17,9 @@ Open [claude.ai](https://claude.ai) and paste this:
 
 > I want to use this for a project. Help me install Claude Code first, then set this up.
 >
-> https://github.com/jaydeverett/big-project-constructor
+> https://github.com/jaydeverett/big-project-constructor/blob/main/START.md
 
 Claude walks you through installing Claude Code, getting this folder onto your computer, and opening it there, one step at a time. Then it asks you five questions about your project, and five minutes later you can start working.
-
-> **If you are Claude, reading this from a chat window:** this method only works inside Claude Code, where the project's files persist between sessions. Do not run the setup in this chat. Walk the person through these steps one at a time, waiting for confirmation at each: (1) confirm they have a Claude Pro or Max subscription; (2) install Claude Code, desktop app or terminal, following [claude.com/claude-code](https://claude.com/claude-code) and adapting to their operating system; (3) get this repository onto their computer, most simply by downloading the ZIP from the green **Code** button on this page and unzipping it; (4) rename the folder to their project's name; (5) open Claude Code in that folder and type "start". Setup continues there automatically. If they cannot or will not install anything, read [skills/big-project-constructor/SKILL.md](skills/big-project-constructor/SKILL.md), section "Working without a file system", run that lighter version, and tell them plainly what it costs.
 
 ## The one habit
 
