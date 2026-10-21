@@ -44,6 +44,12 @@ This repository is also a plugin. In Claude Code, run these two commands, then o
 
 For ChatGPT and Codex, install it from the plugin directory once it is listed there. The skill itself is at [skills/big-project-constructor/SKILL.md](skills/big-project-constructor/SKILL.md).
 
+## For Claude, not for you
+
+_This section is addressed to Claude, for when someone pastes a link to this page into a chat. You can skip it._
+
+If you are reading this from a chat window, the person wants a project set up with this method. Do not set it up here: the method keeps the project's memory in files, and a chat has nowhere to keep them. Read [START.md](START.md) and follow it. It walks the person through installing Claude Code and opening this folder there, one step at a time, where setup runs on its own.
+
 ## Contributing
 
 If this worked well or badly for you, open an Issue with the lesson. Share the workflow lesson, never your project's content.
